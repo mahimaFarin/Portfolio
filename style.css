@@ -97,20 +97,7 @@ nav a{
     position:relative;
 }
 
-nav a.active{
-    color:#2563EB;
-}
 
-nav a.active::after{
-    content:"";
-    position:absolute;
-    width:120px;
-    height:3px;
-    background:#2563EB;
-    bottom:-15px;
-    left:50%;
-    transform:translateX(-50%);
-}
 
 nav ul {
     display: flex;
@@ -1272,7 +1259,7 @@ nav ul {
 
     pointer-events:none;
 
-    z-index:-1;
+   z-index:0;
 
 }
 /* HEADING */
@@ -1849,7 +1836,7 @@ font-size:120px;
 @media(max-width:768px){
 
     header{
-        flex-direction:column;
+    flex-direction:column;
         gap:20px;
     }
 
@@ -1858,10 +1845,23 @@ font-size:120px;
         justify-content:center;
     }
 
+       nav ul{
+        gap:12px;
+    }
+
+    .nav-link{
+        font-size:14px;
+    }
+
     .image-circle{
         width:300px;
         height:300px;
     }
+
+    .hero{
+    min-height:auto;
+    padding:60px 0;
+}
 
     .hero-text h1{
         font-size:42px;
@@ -1942,7 +1942,7 @@ font-size:120px;
     margin:70px auto 0;
 
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr;
     gap:35px;
 }
 
@@ -2129,6 +2129,32 @@ letter-spacing:4px;
 
 justify-content:center;
 
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-text h3{
+    font-size:24px;
+}
+
+.hero-text h2{
+    font-size:18px;
+}
+
+.image-circle{
+    width:250px;
+    height:250px;
+}
+
+.btn{
+    font-size:16px;
+    padding:12px 20px;
 }
 
 }
