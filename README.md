@@ -8,6 +8,10 @@ The goal of this project is to present my work, skills, and experience while pra
 
 ---
 
+## Live Demo
+
+ **[Visit My Portfolio](https://mahimafarin.github.io/Portfolio/)**
+
 ## Key Features
 
 - Responsive and modern user interface
